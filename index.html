@@ -1,1 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Finishing Inc. | Custom Architectural Finishes & Wood Coatings | San Francisco Bay Area</title>
+  <meta name="description" content="Custom architectural finishes and wood coatings for designers, architects, contractors, and fabricators across the San Francisco Bay Area since 1993. CA Lic #817334.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            display: ['Cinzel', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fbf8f3',
+              100: '#f5efe4',
+              200: '#ebdeca',
+              300: '#dcbe9f',
+              400: '#c89d71',
+              500: '#b8834f',
+              600: '#9e673a',
+              700: '#7e4d2d',
+              800: '#643d26',
+              900: '#4e3020',
+              950: '#2b180d',
+            },
+            wood: {
+              charcoal: '#12151b',
+              navy: '#1a2230',
+              slate: '#2c3749',
+              walnut: '#3d2b1f',
+              espresso: '#231812',
+              cream: '#f9f7f4',
+              gold: '#c5a059',
+              lightgold: '#e6ca85',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-header {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+    /* Subtle paper texture feel */
+    .bg-grain {
+      background-color: #12151b;
+      background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+  </style>
+</head>
+<body class="bg-wood-charcoal text-slate-200 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-wood-navy border-b border-wood-slate/50 text-xs py-2 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-300">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 font-medium text-brand-300">
+          <svg class="w-3.5 h-3.5 text-wood-gold" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+          Master Artisans Since 1993
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline text-slate-300">California Contractor License <strong class="text-white font-semibold">CA LIC #817334</strong></span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="tel:7075888502" class="hover:text-wood-gold transition-colors flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-wood-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          (707) 588-8502
+        </a>
+        <a href="mailto:info@interiorfinishing.net" class="hover:text-wood-gold transition-colors hidden sm:flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-wood-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          info@interiorfinishing.net
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-wood-charcoal/90 glass-header border-b border-wood-slate/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo & Name -->
+      <a href="#hero" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-lg bg-white/5 border border-wood-gold/30 p-1.5 flex items-center justify-center overflow-hidden shadow-inner group-hover:border-wood-gold transition-colors">
+          <img src="https://www.interiorfinishing.net/LogoVariation2.png" 
+               alt="Interior Finishing Logo" 
+               class="w-full h-full object-contain filter drop-shadow"
+               onerror="this.style.display='none'; document.getElementById('fallbackLogo').classList.remove('hidden');" />
+          <div id="fallbackLogo" class="hidden text-wood-gold font-display font-bold text-lg">IF</div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-lg tracking-wider text-white group-hover:text-wood-gold transition-colors">INTERIOR FINISHING</span>
+          <span class="text-[10px] tracking-widest uppercase text-wood-gold font-semibold">Custom Architectural Finishes</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-wood-gold transition-colors">About & Heritage</a>
+        <a href="#services" class="hover:text-wood-gold transition-colors">Capabilities</a>
+        <a href="#gallery" class="hover:text-wood-gold transition-colors">Portfolio</a>
+        <a href="#samples" class="hover:text-wood-gold transition-colors">Finishes & Materials</a>
+        <a href="#process" class="hover:text-wood-gold transition-colors">Methodology</a>
+        <a href="#contact" class="hover:text-wood-gold transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden sm:flex items-center space-x-4">
+        <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded border border-wood-gold text-wood-gold text-xs font-semibold uppercase tracking-wider hover:bg-wood-gold hover:text-wood-charcoal transition-all duration-200 shadow-sm">
+          Request Estimate
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex lg:hidden">
+        <button id="mobileMenuBtn" type="button" aria-label="Toggle navigation menu" class="text-slate-300 hover:text-white p-2 rounded focus:outline-none">
+          <svg id="menuIconClosed" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menuIconOpen" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileDrawer" class="hidden lg:hidden bg-wood-navy border-b border-wood-slate px-4 pt-3 pb-6 space-y-3">
+      <a href="#about" class="mobile-nav-link block py-2 text-base font-medium text-slate-200 hover:text-wood-gold border-b border-slate-700/50">About & Heritage</a>
+      <a href="#services" class="mobile-nav-link block py-2 text-base font-medium text-slate-200 hover:text-wood-gold border-b border-slate-700/50">Capabilities</a>
+      <a href="#gallery" class="mobile-nav-link block py-2 text-base font-medium text-slate-200 hover:text-wood-gold border-b border-slate-700/50">Portfolio</a>
+      <a href="#samples" class="mobile-nav-link block py-2 text-base font-medium text-slate-200 hover:text-wood-gold border-b border-slate-700/50">Finishes & Materials</a>
+      <a href="#process" class="mobile-nav-link block py-2 text-base font-medium text-slate-200 hover:text-wood-gold border-b border-slate-700/50">Methodology</a>
+      <a href="#contact" class="mobile-nav-link block py-2 text-base font-medium text-wood-gold font-semibold">Contact & Consultations</a>
+      <div class="pt-2">
+        <a href="tel:7075888502" class="w-full inline-flex items-center justify-center py-2.5 rounded bg-wood-gold text-wood-charcoal text-sm font-semibold tracking-wide">
+          Call (707) 588-8502
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden bg-grain">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-wood-gold/10 border border-wood-gold/30 text-wood-gold text-xs font-semibold uppercase tracking-widest">
+            <span class="w-1.5 h-1.5 rounded-full bg-wood-gold animate-pulse"></span>
+            Established 1993 • Rohnert Park, CA
+          </div>
+          
+          <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight text-balance">
+            Finishes & Coatings for the Most Demanding <span class="italic text-wood-gold font-normal">Architectural Visions</span>
+          </h1>
+          
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light max-w-2xl">
+            Serving prominent interior designers, architects, general contractors, and master millwork fabricators across the San Francisco Bay Area for over three decades. From shop-applied conversion coatings to on-site beam detailing and 12-karat gold leaf casework.
+          </p>
+
+          <!-- Key Highlights Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs">
+            <div class="bg-wood-navy/70 border border-wood-slate/80 p-3 rounded">
+              <span class="text-wood-gold font-display font-semibold block text-base">30+ Years</span>
+              <span class="text-slate-400">Bay Area Heritage</span>
+            </div>
+            <div class="bg-wood-navy/70 border border-wood-slate/80 p-3 rounded">
+              <span class="text-wood-gold font-display font-semibold block text-base">Shop & On-Site</span>
+              <span class="text-slate-400">Complete Versatility</span>
+            </div>
+            <div class="col-span-2 sm:col-span-1 bg-wood-navy/70 border border-wood-slate/80 p-3 rounded">
+              <span class="text-wood-gold font-display font-semibold block text-base">CA LIC #817334</span>
+              <span class="text-slate-400">Licensed & Insured</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+            <a href="#gallery" class="inline-flex items-center justify-center px-6 py-3.5 rounded bg-wood-gold text-wood-charcoal font-semibold text-sm tracking-wider uppercase hover:bg-wood-lightgold transition-all duration-200 shadow-lg shadow-wood-gold/10">
+              View Architectural Portfolio
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded bg-wood-navy border border-wood-slate text-slate-200 font-medium text-sm hover:border-wood-gold hover:text-white transition-all duration-200">
+              Consult on an Upcoming Project
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Featured Visual Card -->
+        <div class="lg:col-span-5">
+          <div class="relative group rounded-xl overflow-hidden border border-wood-gold/40 shadow-2xl bg-wood-navy">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+              <img src="https://www.interiorfinishing.net/Support/1400/001.JPG" 
+                   alt="Interior Finishing Custom Architectural Dining Room and Coffered Ceiling" 
+                   class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-wood-charcoal via-wood-charcoal/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 space-y-1">
+              <span class="text-[11px] font-semibold uppercase tracking-wider text-wood-gold">Signature Installation</span>
+              <h2 class="text-white font-serif text-lg font-semibold">Beams, Windows & Custom Trim</h2>
+              <p class="text-xs text-slate-300 line-clamp-2">Finished on site by the Interior Finishing artisan crew to exact architectural tolerances.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage & Scope Section -->
+  <section id="about" class="py-20 bg-wood-navy border-y border-wood-slate/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-semibold tracking-widest text-wood-gold uppercase">Uncompromising Craftsmanship</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white font-bold leading-snug">
+            Where Modern Finish Science Meets Old-World Hand Artistry
+          </h2>
+          <p class="text-slate-300 leading-relaxed font-light">
+            Founded in 1993 in Rohnert Park, California, Interior Finishing Inc. was established to provide the North Bay and greater San Francisco architectural community with a dedicated finishing partner capable of meeting the highest standards of luxury residential estates, boutique hospitality, and commercial architectural showcases.
+          </p>
+          <p class="text-slate-300 leading-relaxed font-light">
+            Whether your project demands precision-controlled shop finishes or rigorous field work on historic timbers, our dual-environment workflow ensures flawless color matching, durable finish chemistry, and seamless coordination with your site schedule.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div class="border-l-2 border-wood-gold pl-4 py-1">
+              <h3 class="text-white font-semibold text-sm font-serif">State-of-the-Art Shop</h3>
+              <p class="text-xs text-slate-400 mt-1">Clean-room spray booths, controlled drying, fuming chambers, and specialized glazing stations.</p>
+            </div>
+            <div class="border-l-2 border-wood-gold pl-4 py-1">
+              <h3 class="text-white font-semibold text-sm font-serif">Mobile On-Site Crew</h3>
+              <p class="text-xs text-slate-400 mt-1">Field artisans trained for architectural beams, existing trim integration, and final hand wax & buffing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-lg overflow-hidden border border-wood-slate shadow-md">
+              <img src="https://www.interiorfinishing.net/Support/1400/002.jpg" 
+                   alt="Vaulted timber ceiling architectural finish" 
+                   class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="rounded-lg overflow-hidden border border-wood-slate shadow-md">
+              <img src="https://www.interiorfinishing.net/Support/1400/004.jpg" 
+                   alt="Custom kitchen cabinetry finish" 
+                   class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+          </div>
+          <div class="space-y-4 pt-6">
+            <div class="rounded-lg overflow-hidden border border-wood-slate shadow-md">
+              <img src="https://www.interiorfinishing.net/Support/1400/003.jpg" 
+                   alt="Architectural casework finish detail" 
+                   class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="rounded-lg overflow-hidden border border-wood-slate shadow-md">
+              <img src="https://www.interiorfinishing.net/Support/1400/006.jpg" 
+                   alt="Exposed ceiling beams and dining finish" 
+                   class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Finish Capabilities & Specialties -->
+  <section id="services" class="py-20 bg-wood-charcoal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-semibold tracking-widest text-wood-gold uppercase">Specialized Formulations & Techniques</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-white font-bold">Comprehensive Architectural Finishing Services</h2>
+        <p class="text-slate-400 text-sm sm:text-base font-light">
+          We collaborate closely with fabricators and architects to achieve custom sheens, chemical reactive patinas, and durable protective topcoats.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service Card 1 -->
+        <div class="bg-wood-navy/80 border border-wood-slate/80 p-7 rounded-xl hover:border-wood-gold/60 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded bg-wood-charcoal border border-wood-gold/30 flex items-center justify-center text-wood-gold mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-white font-semibold mb-2 group-hover:text-wood-gold transition-colors">Fine Cabinetry & Casework</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            Shop-applied high-durability conversion varnishes, urethane systems, and multi-step opaque coats with tailored sheens from dead-flat to high-gloss mirror finishes.
+          </p>
+          <span class="text-[11px] font-medium text-wood-gold uppercase tracking-wider block">Cherrywood • Mahogany • Walnut • Maple</span>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="bg-wood-navy/80 border border-wood-slate/80 p-7 rounded-xl hover:border-wood-gold/60 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded bg-wood-charcoal border border-wood-gold/30 flex items-center justify-center text-wood-gold mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-white font-semibold mb-2 group-hover:text-wood-gold transition-colors">Fumed & Reactive Oak Treatments</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            Stain-free coloration achieved through controlled fuming and natural tannin reaction, yielding rich, organic smoke and silver-gray undertones that never muddy the grain.
+          </p>
+          <span class="text-[11px] font-medium text-wood-gold uppercase tracking-wider block">American Oak • White Oak • European Oak</span>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="bg-wood-navy/80 border border-wood-slate/80 p-7 rounded-xl hover:border-wood-gold/60 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded bg-wood-charcoal border border-wood-gold/30 flex items-center justify-center text-wood-gold mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-white font-semibold mb-2 group-hover:text-wood-gold transition-colors">12K Gold Leaf & Gilded Accents</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            Master hand-gilding using 12-karat white gold, yellow gold, and genuine silver leaf applied to custom mouldings, decorative panels, and bespoke casework details.
+          </p>
+          <span class="text-[11px] font-medium text-wood-gold uppercase tracking-wider block">White Gold • Silver Leaf • Metallic Patinas</span>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="bg-wood-navy/80 border border-wood-slate/80 p-7 rounded-xl hover:border-wood-gold/60 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded bg-wood-charcoal border border-wood-gold/30 flex items-center justify-center text-wood-gold mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-white font-semibold mb-2 group-hover:text-wood-gold transition-colors">On-Site Beams & Ceiling Finishing</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            Our skilled mobile crew finishes timber beams, coffered ceilings, and fixed architectural millwork directly on site, ensuring perfect tone alignment with shop-finished cabinetry.
+          </p>
+          <span class="text-[11px] font-medium text-wood-gold uppercase tracking-wider block">Hand-Waxing • Buffing • Historic Beams</span>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="bg-wood-navy/80 border border-wood-slate/80 p-7 rounded-xl hover:border-wood-gold/60 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded bg-wood-charcoal border border-wood-gold/30 flex items-center justify-center text-wood-gold mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-white font-semibold mb-2 group-hover:text-wood-gold transition-colors">Antiquing & Distressed Texturing</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            "Making new wood look like old, but not abused." Artisanal hand-scraping, wire-brushing, cerused grain accents, and multi-tone glazing that evoke timeless elegance.
+          </p>
+          <span class="text-[11px] font-medium text-wood-gold uppercase tracking-wider block">Glaze Shading • Cerused • Hand-Rubbed</span>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="bg-wood-navy/80 border border-wood-slate/80 p-7 rounded-xl hover:border-wood-gold/60 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded bg-wood-charcoal border border-wood-gold/30 flex items-center justify-center text-wood-gold mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-white font-semibold mb-2 group-hover:text-wood-gold transition-colors">Custom Architect Sample Development</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            We produce physical custom sample boards on client-specified wood species to assist design firms and architects through client submittals and approvals.
+          </p>
+          <span class="text-[11px] font-medium text-wood-gold uppercase tracking-wider block">Custom Steppes • Sheen Ladders • Color Matching</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Project Portfolio Gallery -->
+  <section id="gallery" class="py-20 bg-wood-navy border-t border-wood-slate/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="space-y-3">
+          <span class="text-xs font-semibold tracking-widest text-wood-gold uppercase">Completed Projects</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white font-bold">Featured Architectural Installations</h2>
+          <p class="text-slate-400 text-sm max-w-2xl font-light">
+            Explore authentic casework, ceiling beams, and interior woodwork finished by Interior Finishing Inc. across Northern California.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="flex flex-wrap gap-2 text-xs" id="galleryFilters">
+          <button data-filter="all" class="filter-btn px-4 py-2 rounded bg-wood-gold text-wood-charcoal font-semibold transition-all">All Projects</button>
+          <button data-filter="casework" class="filter-btn px-4 py-2 rounded bg-wood-charcoal border border-wood-slate text-slate-300 hover:border-wood-gold font-medium transition-all">Cabinetry & Casework</button>
+          <button data-filter="beams" class="filter-btn px-4 py-2 rounded bg-wood-charcoal border border-wood-slate text-slate-300 hover:border-wood-gold font-medium transition-all">Ceilings & Beams</button>
+          <button data-filter="panels" class="filter-btn px-4 py-2 rounded bg-wood-charcoal border border-wood-slate text-slate-300 hover:border-wood-gold font-medium transition-all">Wall Paneling & Trim</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectGrid">
+
+        <!-- Item 1 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="beams panels"
+             onclick="openLightbox(0)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/001.JPG" 
+                 alt="Dining room coffered ceiling and beam finish" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-wood-charcoal/20 group-hover:bg-transparent transition-colors"></div>
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">On-Site & Shop</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Executive Dining & Coffered Ceilings</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              All beams, windows and trim finished on site by the Interior Finishing crew.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="beams"
+             onclick="openLightbox(1)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/002.jpg" 
+                 alt="Vaulted timber ceiling architectural finish" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Shop Finished</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Cathedral Vaulted Ceiling Beams</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              All mahogany was finished in Interior Finishing's shop with the final wax & polish applied on site.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="casework"
+             onclick="openLightbox(2)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/003.jpg" 
+                 alt="Cherrywood custom architectural casework" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Fine Shop Finish</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Bespoke Cherrywood Cabinetry</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Cherrywood cabinets finished in the Interior Finishing shop with deep luster and satin topcoat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="casework panels"
+             onclick="openLightbox(3)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/004.jpg" 
+                 alt="Kitchen cabinetry and island finish" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Dual Process</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Residential Kitchen & Island Ensemble</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Panels, trim and cases were primed & color applied in shop; final coat applied on site by our field crew.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="casework panels"
+             onclick="openLightbox(4)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/005.jpg" 
+                 alt="Low sheen opaque architectural casework" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Low Sheen Opaque</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Architectural Passage & Blue Casework</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              The casework is coated with a custom low sheen opaque formulation offering tactile velvety feel and scrub resistance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="beams casework"
+             onclick="openLightbox(5)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/006.jpg" 
+                 alt="Kitchen beams and cabinetry finish" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Antique Texture</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Open Kitchen & Antique Timber Beams</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              The beams were treated to an antique texture & color; all finish meticulously applied in our shop.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="panels beams casework"
+             onclick="openLightbox(6)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/007.jpg" 
+                 alt="Wood wall paneling and coffered ceiling" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Color Matching</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Integrated Paneling & Ceiling Harmony</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Casework finished in shop; ceiling finished on site after installation to achieve seamless color unison.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="beams panels"
+             onclick="openLightbox(7)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/008.jpg" 
+                 alt="Grand gallery hallway architectural woodwork" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Full Shop Pre-Finish</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Grand Gallery Hallway & Trim</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Extensive architectural beams and trim pre-finished in our facility for accelerated installation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="casework"
+             onclick="openLightbox(8)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/009.jpg" 
+                 alt="Red custom cabinet finish with dark wood island" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Glaze Shading</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Statement Opaque Glazed Cabinetry</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Opaque color with hand-rubbed glaze shading; finished to perfection in Interior Finishing's shop.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="casework panels"
+             onclick="openLightbox(9)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/010.jpg" 
+                 alt="Luxury bar and lounge woodwork" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Textured Oak</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Artisanal Bar Lounge & Oak Texture</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Architectural oak textured and finished in the shop to endure hospitality and private entertaining wear.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 11 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="panels"
+             onclick="openLightbox(10)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/011.jpg" 
+                 alt="Dining room with fumed oak wall panels" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Fumed American Oak</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Fumed Natural American Oak</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Colored with zero artificial stain—only fumed and clear sealed in our shop to highlight pure wood character.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 12 -->
+        <div class="project-card group cursor-pointer bg-wood-charcoal rounded-xl overflow-hidden border border-wood-slate/60 hover:border-wood-gold transition-all duration-300" 
+             data-category="panels casework"
+             onclick="openLightbox(11)">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900 relative">
+            <img src="https://www.interiorfinishing.net/Support/1400/012.jpg" 
+                 alt="Sunroom architectural wood trim and antique feel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-wood-charcoal/80 backdrop-blur px-2.5 py-1 rounded text-[10px] uppercase tracking-wider text-wood-gold border border-wood-gold/30">Aged Character</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-white font-serif font-semibold text-lg group-hover:text-wood-gold transition-colors">Sunlit Loggia & Antiqued Oak</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              New oak wood carrying the welcome warmth of the old and well-cared for: crafted in our shop.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Material Samples & Finish Swatches Showcase -->
+  <section id="samples" class="py-20 bg-wood-charcoal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-wood-navy border border-wood-slate rounded-2xl p-8 sm:p-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-5 space-y-5">
+            <span class="text-xs font-semibold tracking-widest text-wood-gold uppercase">Material Science & Samples</span>
+            <h2 class="font-serif text-2xl sm:text-3xl text-white font-bold leading-snug">
+              Specialty Architectural Finishes & Precious Gilding
+            </h2>
+            <p class="text-slate-300 text-sm leading-relaxed font-light">
+              We specialize in custom sample prototyping for architects and builders. Review a small cross-section of our signature finishes:
+            </p>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <span class="text-wood-gold font-bold">•</span>
+                <span><strong>12K White Gold & Silver Leaf:</strong> Hand-gilded over custom casework profiles and lacquer bases.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-wood-gold font-bold">•</span>
+                <span><strong>Natural Walnut Staining:</strong> Proprietary multi-step stain schedules that reveal inner golden amber tones without grain obscuration.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-wood-gold font-bold">•</span>
+                <span><strong>Cerused & Wire-Brushed Textures:</strong> Contrasting pore-filler pigments on rift-cut and quarter-sawn white oak.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-wood-gold font-bold">•</span>
+                <span><strong>Heritage Weathered Antiquing:</strong> "The ancient look of wood well-kept" without simulated damage or abuse.</span>
+              </li>
+            </ul>
+
+            <div class="pt-2">
+              <a href="#contact" class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-wood-gold hover:text-white transition-colors">
+                Request physical finish samples for your firm &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              
+              <div class="bg-wood-charcoal p-3 rounded-lg border border-wood-slate/70 text-center space-y-2 group">
+                <div class="aspect-square rounded overflow-hidden bg-slate-900 border border-slate-700">
+                  <img src="https://www.interiorfinishing.net/Support/Samples/150/101%209013%20.jpg" 
+                       alt="Architectural carved column finish sample" 
+                       class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <span class="text-[11px] font-medium text-slate-200 block truncate">Carved Column Patina</span>
+                <span class="text-[10px] text-wood-gold block">Hand-rubbed finish</span>
+              </div>
+
+              <div class="bg-wood-charcoal p-3 rounded-lg border border-wood-slate/70 text-center space-y-2 group">
+                <div class="aspect-square rounded overflow-hidden bg-slate-900 border border-slate-700">
+                  <img src="https://www.interiorfinishing.net/Support/150/013.jpg" 
+                       alt="Modern bathroom vanity wood finish" 
+                       class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <span class="text-[11px] font-medium text-slate-200 block truncate">Modern Vanity Walnut</span>
+                <span class="text-[10px] text-wood-gold block">Water-resistant topcoat</span>
+              </div>
+
+              <div class="bg-wood-charcoal p-3 rounded-lg border border-wood-slate/70 text-center space-y-2 group">
+                <div class="aspect-square rounded overflow-hidden bg-slate-900 border border-slate-700">
+                  <img src="https://www.interiorfinishing.net/Support/150/010.jpg" 
+                       alt="Dark oak wire brushed sample" 
+                       class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <span class="text-[11px] font-medium text-slate-200 block truncate">Cerused Wire-Brushed</span>
+                <span class="text-[10px] text-wood-gold block">Low sheen matte</span>
+              </div>
+
+              <div class="bg-wood-charcoal p-3 rounded-lg border border-wood-slate/70 text-center space-y-2 group">
+                <div class="aspect-square rounded overflow-hidden bg-slate-900 border border-slate-700">
+                  <img src="https://www.interiorfinishing.net/Support/150/003.jpg" 
+                       alt="Cherrywood cabinet sample" 
+                       class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <span class="text-[11px] font-medium text-slate-200 block truncate">Classic Cherry Polish</span>
+                <span class="text-[10px] text-wood-gold block">Hand wax finish</span>
+              </div>
+
+              <div class="bg-wood-charcoal p-3 rounded-lg border border-wood-slate/70 text-center space-y-2 group">
+                <div class="aspect-square rounded overflow-hidden bg-slate-900 border border-slate-700">
+                  <img src="https://www.interiorfinishing.net/Support/150/011.jpg" 
+                       alt="Fumed Oak panel sample" 
+                       class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <span class="text-[11px] font-medium text-slate-200 block truncate">Fumed White Oak</span>
+                <span class="text-[10px] text-wood-gold block">Chemical reactive</span>
+              </div>
+
+              <div class="bg-wood-charcoal p-3 rounded-lg border border-wood-slate/70 text-center space-y-2 group">
+                <div class="aspect-square rounded overflow-hidden bg-slate-900 border border-slate-700">
+                  <img src="https://www.interiorfinishing.net/Support/150/005.jpg" 
+                       alt="Opaque enamel finish sample" 
+                       class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <span class="text-[11px] font-medium text-slate-200 block truncate">Architectural Opaque</span>
+                <span class="text-[10px] text-wood-gold block">Velvet enamel</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our 4-Step Collaborative Workflow -->
+  <section id="process" class="py-20 bg-wood-navy border-t border-wood-slate/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-semibold tracking-widest text-wood-gold uppercase">Collaborative Process</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-white font-bold">How We Partner with Project Teams</h2>
+        <p class="text-slate-400 text-sm font-light">
+          From schematic design to on-site punch list, we maintain rigorous control over every coat.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="bg-wood-charcoal/60 border border-wood-slate p-6 rounded-xl relative space-y-3">
+          <span class="font-display text-3xl font-bold text-wood-gold/40">01</span>
+          <h3 class="font-serif text-lg text-white font-semibold">Scope & Specification</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We review architectural elevations, species specifications, required wear ratings, and project milestone dates.
+          </p>
+        </div>
+
+        <div class="bg-wood-charcoal/60 border border-wood-slate p-6 rounded-xl relative space-y-3">
+          <span class="font-display text-3xl font-bold text-wood-gold/40">02</span>
+          <h3 class="font-serif text-lg text-white font-semibold">Sample Iteration</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We prepare physical stepped sample boards on matching project lumber for client, architect, and designer sign-off.
+          </p>
+        </div>
+
+        <div class="bg-wood-charcoal/60 border border-wood-slate p-6 rounded-xl relative space-y-3">
+          <span class="font-display text-3xl font-bold text-wood-gold/40">03</span>
+          <h3 class="font-serif text-lg text-white font-semibold">Precision Shop Coating</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Millwork and cabinetry components are prepped, primed, stained, sealed, and topcoated in our controlled Rohnert Park facility.
+          </p>
+        </div>
+
+        <div class="bg-wood-charcoal/60 border border-wood-slate p-6 rounded-xl relative space-y-3">
+          <span class="font-display text-3xl font-bold text-wood-gold/40">04</span>
+          <h3 class="font-serif text-lg text-white font-semibold">On-Site Field Detailing</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Our artisan crew mobilizes to the job site for timber beams, trim touch-ups, color blending, and final hand wax polishing.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Estimate Inquiry Section -->
+  <section id="contact" class="py-20 bg-grain">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Info & Shop Location -->
+        <div class="lg:col-span-5 space-y-8">
+          <div class="space-y-4">
+            <span class="text-xs font-semibold tracking-widest text-wood-gold uppercase">Direct Communication</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-white font-bold leading-tight">
+              Let's Discuss Your Next Architectural Project
+            </h2>
+            <p class="text-slate-300 text-sm leading-relaxed font-light">
+              We welcome inquiries from designers, architects, general contractors, and millwork shops throughout the greater San Francisco Bay Area and Wine Country.
+            </p>
+          </div>
+
+          <div class="space-y-6 text-sm">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded bg-wood-navy border border-wood-gold/30 flex items-center justify-center text-wood-gold shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="text-white block font-serif">Facility & Shop Location:</strong>
+                <p class="text-slate-400 mt-0.5">5850 Redwood Dr., Ste C<br>Rohnert Park, CA 94928</p>
+                <span class="text-xs text-wood-gold mt-1 block">Sonoma County • Bay Area Wide</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded bg-wood-navy border border-wood-gold/30 flex items-center justify-center text-wood-gold shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="text-white block font-serif">Telephone Inquiries:</strong>
+                <a href="tel:7075888502" class="text-slate-300 hover:text-wood-gold transition-colors block text-base font-semibold mt-0.5">
+                  (707) 588-8502
+                </a>
+                <span class="text-xs text-slate-400">Monday &ndash; Friday: 7:30 AM &ndash; 4:30 PM PST</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded bg-wood-navy border border-wood-gold/30 flex items-center justify-center text-wood-gold shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="text-white block font-serif">Direct Email:</strong>
+                <a href="mailto:info@interiorfinishing.net" class="text-wood-gold hover:text-white transition-colors block mt-0.5">
+                  info@interiorfinishing.net
+                </a>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-lg bg-wood-navy/60 border border-wood-slate/80">
+              <span class="text-xs text-slate-400 uppercase tracking-wider block">Contractor Credential</span>
+              <span class="text-white font-mono font-semibold text-sm">California Contractor Lic. #817334</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Project Inquiry Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-wood-navy p-8 sm:p-10 rounded-2xl border border-wood-slate shadow-xl">
+            <h3 class="font-serif text-2xl text-white font-bold mb-2">Request an Estimate or Sample Consultation</h3>
+            <p class="text-slate-400 text-xs sm:text-sm mb-8 font-light">
+              Send us your project parameters or finish requirements, and our estimator will respond promptly.
+            </p>
+
+            <form id="inquiryForm" class="space-y-5" onsubmit="handleFormSubmit(event)">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="contactName" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Your Name *</label>
+                  <input type="text" id="contactName" required placeholder="Jane Doe" 
+                         class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
+                </div>
+                <div>
+                  <label for="contactCompany" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Firm / Studio / Company</label>
+                  <input type="text" id="contactCompany" placeholder="Architectural Millwork LLC" 
+                         class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="contactEmail" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Email Address *</label>
+                  <input type="email" id="contactEmail" required placeholder="jane@studio.com" 
+                         class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
+                </div>
+                <div>
+                  <label for="contactPhone" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Phone Number *</label>
+                  <input type="tel" id="contactPhone" required placeholder="(415) 555-0123" 
+                         class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="projectType" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Project Type</label>
+                  <select id="projectType" class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
+                    <option value="Residential Estate">Luxury Residential Estate</option>
+                    <option value="Architectural Millwork Finishing">Architectural Millwork / Casework</option>
+                    <option value="Beams and Ceilings">On-Site Beams & Ceiling Finishing</option>
+                    <option value="Specialty Gilding / Reactive">Specialty Finish / 12K Gold Leaf</option>
+                    <option value="Commercial / Hospitality">Commercial & Hospitality</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="projectLocation" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Project Location</label>
+                  <input type="text" id="projectLocation" placeholder="e.g. San Francisco, Napa, Marin" 
+                         class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
+                </div>
+              </div>
+
+              <div>
+                <label for="projectDetails" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Project Details & Finish Specifications *</label>
+                <textarea id="projectDetails" rows="4" required placeholder="Describe the wood species, desired sheen, shop or on-site requirements, and estimated project timeline..." 
+                          class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors"></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="w-full py-3.5 px-6 rounded bg-wood-gold hover:bg-wood-lightgold text-wood-charcoal font-semibold text-sm uppercase tracking-wider transition-all duration-200 shadow-md">
+                Send Project Inquiry
+              </button>
+
+              <div id="formFeedback" class="hidden p-4 rounded bg-emerald-950/80 border border-emerald-500/50 text-emerald-200 text-xs sm:text-sm text-center">
+                Thank you! Your message has been prepared for transmission. We will review your project parameters and contact you shortly.
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4 sm:p-8" onclick="closeLightboxOnBackdrop(event)">
+    <div class="relative max-w-5xl w-full bg-wood-charcoal border border-wood-slate rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[92vh]">
+      
+      <!-- Close button -->
+      <button onclick="closeLightbox()" type="button" aria-label="Close modal" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-wood-charcoal/80 text-white hover:text-wood-gold border border-wood-slate flex items-center justify-center transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <!-- Lightbox Image View -->
+      <div class="relative bg-black flex items-center justify-center min-h-[300px] max-h-[60vh] overflow-hidden">
+        <img id="lightboxImg" src="" alt="" class="max-h-[60vh] w-auto max-w-full object-contain">
+        
+        <!-- Prev button -->
+        <button onclick="prevLightbox(event)" type="button" aria-label="Previous image" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-wood-charcoal/80 text-white hover:text-wood-gold border border-wood-slate flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+
+        <!-- Next button -->
+        <button onclick="nextLightbox(event)" type="button" aria-label="Next image" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-wood-charcoal/80 text-white hover:text-wood-gold border border-wood-slate flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Lightbox Description Bar -->
+      <div class="p-6 bg-wood-navy border-t border-wood-slate space-y-2">
+        <div class="flex items-center justify-between text-xs text-wood-gold font-semibold uppercase tracking-wider">
+          <span id="lightboxBadge">Architectural Finish</span>
+          <span id="lightboxCounter">1 / 12</span>
+        </div>
+        <h3 id="lightboxTitle" class="text-white font-serif text-xl font-bold"></h3>
+        <p id="lightboxCaption" class="text-slate-300 text-sm leading-relaxed"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-wood-charcoal border-t border-wood-slate/80 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-wood-slate/50">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded bg-wood-gold/10 border border-wood-gold/30 flex items-center justify-center text-wood-gold font-display font-bold text-sm">
+            IF
+          </div>
+          <div>
+            <span class="text-white font-serif font-bold text-sm">INTERIOR FINISHING INC.</span>
+            <span class="block text-[10px] text-slate-500">Custom Architectural Finishes & Wood Coatings Since 1993</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-slate-300">
+          <a href="#about" class="hover:text-wood-gold transition-colors">About</a>
+          <a href="#services" class="hover:text-wood-gold transition-colors">Capabilities</a>
+          <a href="#gallery" class="hover:text-wood-gold transition-colors">Portfolio</a>
+          <a href="#samples" class="hover:text-wood-gold transition-colors">Samples</a>
+          <a href="#contact" class="hover:text-wood-gold transition-colors">Contact</a>
+        </div>
+
+        <div class="text-right">
+          <span class="text-white font-mono font-medium">CA LIC. #817334</span>
+          <span class="block text-[10px] text-slate-500">Rohnert Park, California</span>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[11px]">
+        <p>© 1993&ndash;2026 Interior Finishing Inc. All rights reserved. Serving San Francisco, Marin, Sonoma, Napa, East Bay, and the Peninsula.</p>
+        <p>5850 Redwood Dr., Ste C, Rohnert Park, CA 94928 • (707) 588-8502</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // Gallery Data matching the authentic original materials
+    const projects = [
+      {
+        title: "Executive Dining & Coffered Ceilings",
+        badge: "On-Site & Shop Integration",
+        caption: "All beams, windows and trim finished on site by the Interior Finishing artisan crew to exact architectural tolerances.",
+        image: "https://www.interiorfinishing.net/Support/1400/001.JPG"
+      },
+      {
+        title: "Cathedral Vaulted Ceiling Beams",
+        badge: "Specialty Mahogany Polish",
+        caption: "All mahogany was finished in Interior Finishing's shop with the final wax & polish applied on site.",
+        image: "https://www.interiorfinishing.net/Support/1400/002.jpg"
+      },
+      {
+        title: "Bespoke Cherrywood Cabinetry",
+        badge: "Fine Shop Finish",
+        caption: "Cherrywood cabinets finished in the Interior Finishing shop with deep luster and satin topcoat.",
+        image: "https://www.interiorfinishing.net/Support/1400/003.jpg"
+      },
+      {
+        title: "Residential Kitchen & Island Ensemble",
+        badge: "Multi-Coat Dual Process",
+        caption: "Panels, trim and cases were primed & color applied in shop; final coat applied on site by our field crew.",
+        image: "https://www.interiorfinishing.net/Support/1400/004.jpg"
+      },
+      {
+        title: "Architectural Passage & Blue Casework",
+        badge: "Low Sheen Opaque",
+        caption: "The casework is coated with a custom low sheen opaque formulation offering tactile velvety feel and scrub resistance.",
+        image: "https://www.interiorfinishing.net/Support/1400/005.jpg"
+      },
+      {
+        title: "Open Kitchen & Antique Timber Beams",
+        badge: "Antique Texture & Color",
+        caption: "The beams were treated to an antique texture & color; all finish meticulously applied in our shop.",
+        image: "https://www.interiorfinishing.net/Support/1400/006.jpg"
+      },
+      {
+        title: "Integrated Paneling & Ceiling Harmony",
+        badge: "Field Match & Harmony",
+        caption: "Casework finished in shop; ceiling finished on site after installation to achieve seamless color unison.",
+        image: "https://www.interiorfinishing.net/Support/1400/007.jpg"
+      },
+      {
+        title: "Grand Gallery Hallway & Trim",
+        badge: "Full Shop Pre-Finish",
+        caption: "Extensive architectural beams and trim pre-finished in our facility for accelerated installation.",
+        image: "https://www.interiorfinishing.net/Support/1400/008.jpg"
+      },
+      {
+        title: "Statement Opaque Glazed Cabinetry",
+        badge: "Hand Glaze Shading",
+        caption: "Opaque color with hand-rubbed glaze shading; finished to perfection in Interior Finishing's shop.",
+        image: "https://www.interiorfinishing.net/Support/1400/009.jpg"
+      },
+      {
+        title: "Artisanal Bar Lounge & Oak Texture",
+        badge: "Textured Oak & Durability",
+        caption: "Architectural oak textured and finished in the shop to endure hospitality and private entertaining wear.",
+        image: "https://www.interiorfinishing.net/Support/1400/010.jpg"
+      },
+      {
+        title: "Fumed Natural American Oak",
+        badge: "Chemical Reactive Fuming",
+        caption: "Colored with zero artificial stain—only fumed and clear sealed in our shop to highlight pure wood character.",
+        image: "https://www.interiorfinishing.net/Support/1400/011.jpg"
+      },
+      {
+        title: "Sunlit Loggia & Antiqued Oak",
+        badge: "Aged Heritage Warmth",
+        caption: "New oak wood carrying the welcome warmth of the old and well-cared for: crafted in our shop.",
+        image: "https://www.interiorfinishing.net/Support/1400/012.jpg"
+      }
+    ];
+
+    let currentLightboxIdx = 0;
+
+    function openLightbox(index) {
+      currentLightboxIdx = index;
+      updateLightboxContent();
+      document.getElementById('lightboxModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function closeLightboxOnBackdrop(e) {
+      if (e.target.id === 'lightboxModal') {
+        closeLightbox();
+      }
+    }
+
+    function prevLightbox(e) {
+      if (e) e.stopPropagation();
+      currentLightboxIdx = (currentLightboxIdx - 1 + projects.length) % projects.length;
+      updateLightboxContent();
+    }
+
+    function nextLightbox(e) {
+      if (e) e.stopPropagation();
+      currentLightboxIdx = (currentLightboxIdx + 1) % projects.length;
+      updateLightboxContent();
+    }
+
+    function updateLightboxContent() {
+      const item = projects[currentLightboxIdx];
+      document.getElementById('lightboxImg').src = item.image;
+      document.getElementById('lightboxImg').alt = item.title;
+      document.getElementById('lightboxTitle').textContent = item.title;
+      document.getElementById('lightboxCaption').textContent = item.caption;
+      document.getElementById('lightboxBadge').textContent = item.badge;
+      document.getElementById('lightboxCounter').textContent = (currentLightboxIdx + 1) + " / " + projects.length;
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      const modal = document.getElementById('lightboxModal');
+      if (!modal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevLightbox();
+        if (e.key === 'ArrowRight') nextLightbox();
+      }
+    });
+
+    // Mobile Navigation Drawer Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const menuIconClosed = document.getElementById('menuIconClosed');
+    const menuIconOpen = document.getElementById('menuIconOpen');
+
+    mobileBtn.addEventListener('click', function() {
+      const isHidden = mobileDrawer.classList.contains('hidden');
+      if (isHidden) {
+        mobileDrawer.classList.remove('hidden');
+        menuIconClosed.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+      } else {
+        mobileDrawer.classList.add('hidden');
+        menuIconClosed.classList.remove('hidden');
+        menuIconOpen.classList.add('hidden');
+      }
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileDrawer.classList.add('hidden');
+        menuIconClosed.classList.remove('hidden');
+        menuIconOpen.classList.add('hidden');
+      });
+    });
+
+    // Gallery Category Filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        filterButtons.forEach(function(b) {
+          b.classList.remove('bg-wood-gold', 'text-wood-charcoal');
+          b.classList.add('bg-wood-charcoal', 'border', 'border-wood-slate', 'text-slate-300');
+        });
+        btn.classList.add('bg-wood-gold', 'text-wood-charcoal');
+        btn.classList.remove('bg-wood-charcoal', 'border-wood-slate', 'text-slate-300');
+
+        const filter = btn.getAttribute('data-filter');
+
+        projectCards.forEach(function(card) {
+          const categories = card.getAttribute('data-category') || '';
+          if (filter === 'all' || categories.includes(filter)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Contact Form Submission Handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      const company = document.getElementById('contactCompany').value;
+      const email = document.getElementById('contactEmail').value;
+      const phone = document.getElementById('contactPhone').value;
+      const type = document.getElementById('projectType').value;
+      const location = document.getElementById('projectLocation').value;
+      const details = document.getElementById('projectDetails').value;
+
+      const subject = encodeURIComponent("Project Inquiry: " + type + " - " + (company || name));
+      const body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Company: " + company + "\n" +
+        "Email: " + email + "\n" +
+        "Phone: " + phone + "\n" +
+        "Project Type: " + type + "\n" +
+        "Location: " + location + "\n\n" +
+        "Project Details:\n" + details
+      );
+
+      const feedback = document.getElementById('formFeedback');
+      feedback.classList.remove('hidden');
+
+      // Open email client with pre-filled content
+      window.location.href = "mailto:info@interiorfinishing.net?subject=" + subject + "&body=" + body;
+    }
+  </script>
+</body>
+</html>
 
