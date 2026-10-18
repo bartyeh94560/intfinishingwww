@@ -92,7 +92,7 @@
           </svg>
           (707) 588-8502
         </a>
-        <a href="mailto:info@interiorfinishing.net" class="hover:text-wood-gold transition-colors hidden sm:flex items-center gap-1.5">
+        <a href="mailto:bartyeh@gmail.com" class="hover:text-wood-gold transition-colors hidden sm:flex items-center gap-1.5">
           <svg class="w-3.5 h-3.5 text-wood-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
@@ -870,7 +870,7 @@
               </div>
               <div>
                 <strong class="text-white block font-serif">Direct Email:</strong>
-                <a href="mailto:info@interiorfinishing.net" class="text-wood-gold hover:text-white transition-colors block mt-0.5">
+                <a href="mailto:bartyeh@gmail.com" class="text-wood-gold hover:text-white transition-colors block mt-0.5">
                   info@interiorfinishing.net
                 </a>
               </div>
@@ -892,17 +892,24 @@
               Send us your project parameters or finish requirements, and our estimator will respond promptly.
             </p>
 
-            <form id="inquiryForm" class="space-y-5" onsubmit="handleFormSubmit(event)">
+            <!-- Direct Browser Form Submission via Web3Forms API -->
+            <form id="inquiryForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-5" onsubmit="handleFormSubmit(event)">
+              <!-- Web3Forms Access Key & Metadata -->
+              <input type="hidden" name="access_key" value="dddfa52d-add5-4209-9fd9-47241ba87b41" />
+              <input type="hidden" name="subject" value="New Project Inquiry - Interior Finishing (intfinishing.com)" />
+              <input type="hidden" name="from_name" value="Interior Finishing Website" />
+              <!-- Honeypot Spam Protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
               
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label for="contactName" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Your Name *</label>
-                  <input type="text" id="contactName" required placeholder="Jane Doe" 
+                  <input type="text" id="contactName" name="name" required placeholder="Jane Doe" 
                          class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
                 </div>
                 <div>
                   <label for="contactCompany" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Firm / Studio / Company</label>
-                  <input type="text" id="contactCompany" placeholder="Architectural Millwork LLC" 
+                  <input type="text" id="contactCompany" name="company" placeholder="Architectural Millwork LLC" 
                          class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
                 </div>
               </div>
@@ -910,47 +917,46 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label for="contactEmail" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Email Address *</label>
-                  <input type="email" id="contactEmail" required placeholder="jane@studio.com" 
+                  <input type="email" id="contactEmail" name="email" required placeholder="jane@studio.com" 
                          class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
                 </div>
                 <div>
                   <label for="contactPhone" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Phone Number *</label>
-                  <input type="tel" id="contactPhone" required placeholder="(415) 555-0123" 
+                  <input type="tel" id="contactPhone" name="phone" required placeholder="(415) 555-0123" 
                          class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label for="projectType" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Project Type</label>
-                  <select id="projectType" class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
-                    <option value="Residential Estate">Luxury Residential Estate</option>
-                    <option value="Architectural Millwork Finishing">Architectural Millwork / Casework</option>
-                    <option value="Beams and Ceilings">On-Site Beams & Ceiling Finishing</option>
-                    <option value="Specialty Gilding / Reactive">Specialty Finish / 12K Gold Leaf</option>
-                    <option value="Commercial / Hospitality">Commercial & Hospitality</option>
+                  <label for="projectType" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Project Type *</label>
+                  <select id="projectType" name="project_type" required class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
+                    <option value="Luxury Residential Estate">Luxury Residential Estate</option>
+                    <option value="Architectural Millwork / Casework">Architectural Millwork / Casework</option>
+                    <option value="On-Site Beams & Ceiling Finishing">On-Site Beams & Ceiling Finishing</option>
+                    <option value="Specialty Finish / 12K Gold Leaf">Specialty Finish / 12K Gold Leaf</option>
+                    <option value="Commercial & Hospitality">Commercial & Hospitality</option>
+                    <option value="Other Custom Architectural Finish">Other Custom Architectural Finish</option>
                   </select>
                 </div>
                 <div>
                   <label for="projectLocation" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Project Location</label>
-                  <input type="text" id="projectLocation" placeholder="e.g. San Francisco, Napa, Marin" 
+                  <input type="text" id="projectLocation" name="location" placeholder="e.g. San Francisco, Napa, Marin" 
                          class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors">
                 </div>
               </div>
 
               <div>
                 <label for="projectDetails" class="block text-xs font-medium text-slate-300 mb-1.5 uppercase tracking-wider">Project Details & Finish Specifications *</label>
-                <textarea id="projectDetails" rows="4" required placeholder="Describe the wood species, desired sheen, shop or on-site requirements, and estimated project timeline..." 
+                <textarea id="projectDetails" name="message" rows="4" required placeholder="Describe the wood species, desired sheen, shop or on-site requirements, and estimated project timeline..." 
                           class="w-full px-4 py-2.5 rounded bg-wood-charcoal border border-wood-slate text-white text-sm focus:border-wood-gold focus:outline-none transition-colors"></textarea>
               </div>
 
-              <button type="submit" id="submitBtn" class="w-full py-3.5 px-6 rounded bg-wood-gold hover:bg-wood-lightgold text-wood-charcoal font-semibold text-sm uppercase tracking-wider transition-all duration-200 shadow-md">
-                Send Project Inquiry
+              <button type="submit" id="submitBtn" class="w-full py-3.5 px-6 rounded bg-wood-gold hover:bg-wood-lightgold text-wood-charcoal font-semibold text-sm uppercase tracking-wider transition-all duration-200 shadow-md flex items-center justify-center gap-2 cursor-pointer">
+                <span>Send Project Inquiry</span>
               </button>
 
-              <div id="formFeedback" class="hidden p-4 rounded bg-emerald-950/80 border border-emerald-500/50 text-emerald-200 text-xs sm:text-sm text-center">
-                Thank you! Your message has been prepared for transmission. We will review your project parameters and contact you shortly.
-              </div>
+              <div id="formFeedback" class="hidden p-4 rounded text-xs sm:text-sm text-center"></div>
 
             </form>
 
@@ -1225,35 +1231,59 @@
       });
     });
 
-    // Contact Form Submission Handler
-    function handleFormSubmit(e) {
+    // Direct Browser Form Submission Handler via Web3Forms API
+    async function handleFormSubmit(e) {
       e.preventDefault();
-      const name = document.getElementById('contactName').value;
-      const company = document.getElementById('contactCompany').value;
-      const email = document.getElementById('contactEmail').value;
-      const phone = document.getElementById('contactPhone').value;
-      const type = document.getElementById('projectType').value;
-      const location = document.getElementById('projectLocation').value;
-      const details = document.getElementById('projectDetails').value;
-
-      const subject = encodeURIComponent("Project Inquiry: " + type + " - " + (company || name));
-      const body = encodeURIComponent(
-        "Name: " + name + "\n" +
-        "Company: " + company + "\n" +
-        "Email: " + email + "\n" +
-        "Phone: " + phone + "\n" +
-        "Project Type: " + type + "\n" +
-        "Location: " + location + "\n\n" +
-        "Project Details:\n" + details
-      );
-
+      const form = document.getElementById('inquiryForm');
+      const submitBtn = document.getElementById('submitBtn');
       const feedback = document.getElementById('formFeedback');
-      feedback.classList.remove('hidden');
+      const originalBtnHTML = submitBtn.innerHTML;
 
-      // Open email client with pre-filled content
-      window.location.href = "mailto:info@interiorfinishing.net?subject=" + subject + "&body=" + body;
+      // Loading state on button
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+      submitBtn.innerHTML = `
+        <svg class="animate-spin h-4 w-4 text-wood-charcoal inline-block mr-2" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <span>Sending Inquiry Directly...</span>
+      `;
+      feedback.classList.add('hidden');
+
+      const formData = new FormData(form);
+      const jsonObject = Object.fromEntries(formData);
+      const jsonString = JSON.stringify(jsonObject);
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: jsonString
+        });
+
+        const result = await response.json();
+
+        if (response.status === 200 && result.success) {
+          feedback.className = 'p-4 rounded bg-emerald-950/80 border border-emerald-500/50 text-emerald-200 text-xs sm:text-sm text-center block space-y-1';
+          feedback.innerHTML = '<strong class="font-semibold text-white block text-sm">Inquiry Sent Successfully!</strong>Thank you for reaching out. Your project specifications have been submitted directly to our estimating team.';
+          form.reset();
+        } else {
+          feedback.className = 'p-4 rounded bg-amber-950/80 border border-amber-500/50 text-amber-200 text-xs sm:text-sm text-center block space-y-1';
+          feedback.innerHTML = '<strong class="font-semibold text-white block text-sm">Notice:</strong> ' + (result.message || 'Submission could not be completed.') + '<br>Please contact us directly at <a href="mailto:bartyeh@gmail.com" class="underline text-wood-gold">info@interiorfinishing.net</a> or call <a href="tel:7075888502" class="underline text-wood-gold">(707) 588-8502</a>.';
+        }
+      } catch (err) {
+        feedback.className = 'p-4 rounded bg-rose-950/80 border border-rose-500/50 text-rose-200 text-xs sm:text-sm text-center block space-y-1';
+        feedback.innerHTML = '<strong class="font-semibold text-white block text-sm">Transmission Error:</strong> Unable to submit from the browser right now. Please email us directly at <a href="mailto:bartyeh@gmail.com" class="underline text-wood-gold">info@interiorfinishing.net</a> or call <a href="tel:7075888502" class="underline text-wood-gold">(707) 588-8502</a>.';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+        submitBtn.innerHTML = originalBtnHTML;
+      }
     }
   </script>
 </body>
 </html>
-
